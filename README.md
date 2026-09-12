@@ -71,12 +71,6 @@ Uma sessão instrumentada, um agente executor, um Maestro analítico, aprovaçã
 - controles críticos aplicados por código;
 - nenhuma ação irreversível sem aprovação explícita.
 
-## Estado do projeto
-
-**Fase:** MVP funcional com agente, policy engine, aprovações, timeline e Knowledge Port.
-
-**Repositório:** [DanielRobertoRibeiro/hackathon_openai_sp](https://github.com/DanielRobertoRibeiro/hackathon_openai_sp)
-
 ## Executar localmente
 
 Requisitos: Node.js 20+ e pnpm.
