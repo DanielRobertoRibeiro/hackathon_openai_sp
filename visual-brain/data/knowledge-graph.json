@@ -1,0 +1,1967 @@
+{
+  "project_id": "maestro",
+  "projection_version": "1.0.0",
+  "generated_at": "generated-at-build-time",
+  "nodes": [
+    {
+      "id": "document:readme-md",
+      "label": "Maestro",
+      "type": "document",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md",
+      "summary": "Maestro Camada de coordenação e observabilidade para operações de desenvolvimento assistidas por humanos e agentes de IA. O Maestro acompanha sessões de trabalho instrumentadas, consolida eventos técnicos e entrega ao lí"
+    },
+    {
+      "id": "concept:readme-md:1:problema",
+      "label": "Problema",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md#problema",
+      "summary": "Seção de “Maestro”."
+    },
+    {
+      "id": "concept:readme-md:2:proposta",
+      "label": "Proposta",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md#proposta",
+      "summary": "Seção de “Maestro”."
+    },
+    {
+      "id": "concept:readme-md:3:arquitetura-do-mvp",
+      "label": "Arquitetura do MVP",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md#arquitetura-do-mvp",
+      "summary": "Seção de “Maestro”."
+    },
+    {
+      "id": "concept:readme-md:4:documentacao",
+      "label": "Documentação",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md#documentacao",
+      "summary": "Seção de “Maestro”."
+    },
+    {
+      "id": "concept:readme-md:5:escopo-do-hackathon",
+      "label": "Escopo do hackathon",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md#escopo-do-hackathon",
+      "summary": "Seção de “Maestro”."
+    },
+    {
+      "id": "concept:readme-md:6:principios",
+      "label": "Princípios",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md#principios",
+      "summary": "Seção de “Maestro”."
+    },
+    {
+      "id": "concept:readme-md:7:estado-do-projeto",
+      "label": "Estado do projeto",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md#estado-do-projeto",
+      "summary": "Seção de “Maestro”."
+    },
+    {
+      "id": "concept:readme-md:8:executar-o-segundo-cerebro-visual",
+      "label": "Executar o Segundo Cérebro Visual",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md#executar-o-segundo-cerebro-visual",
+      "summary": "Seção de “Maestro”."
+    },
+    {
+      "id": "concept:readme-md:9:licenca",
+      "label": "Licença",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "README.md#licenca",
+      "summary": "Seção de “Maestro”."
+    },
+    {
+      "id": "document:docs-arquitetura-md",
+      "label": "Arquitetura do Maestro",
+      "type": "document",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md",
+      "summary": "Arquitetura do Maestro Decisão O MVP será um monólito modular orientado a eventos, com armazenamento transacional único e integrações atrás de portas. Essa escolha reduz custo operacional e mantém uma evolução futura par"
+    },
+    {
+      "id": "concept:docs-arquitetura-md:1:decisao",
+      "label": "Decisão",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#decisao",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:2:contexto-e-premissas",
+      "label": "Contexto e premissas",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#contexto-e-premissas",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:3:componentes",
+      "label": "Componentes",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#componentes",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:4:limites-dos-modulos",
+      "label": "Limites dos módulos",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#limites-dos-modulos",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:5:fluxo-de-uma-acao",
+      "label": "Fluxo de uma ação",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#fluxo-de-uma-acao",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:6:modelo-de-consistencia",
+      "label": "Modelo de consistência",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#modelo-de-consistencia",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:7:portas-principais",
+      "label": "Portas principais",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#portas-principais",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:8:fronteiras-de-confianca",
+      "label": "Fronteiras de confiança",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#fronteiras-de-confianca",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:9:falhas-e-recuperacao",
+      "label": "Falhas e recuperação",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#falhas-e-recuperacao",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:10:stack-proposta",
+      "label": "Stack proposta",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#stack-proposta",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "concept:docs-arquitetura-md:11:evolucao",
+      "label": "Evolução",
+      "type": "concept",
+      "group": "architecture",
+      "status": "documented",
+      "path": "docs/ARQUITETURA.md#evolucao",
+      "summary": "Seção de “Arquitetura do Maestro”."
+    },
+    {
+      "id": "document:docs-integracao-obsidian-mcp-md",
+      "label": "Integração futura com Obsidian e MCP",
+      "type": "document",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md",
+      "summary": "Integração futura com Obsidian e MCP Objetivo Permitir que o Maestro consulte e persista conhecimento no Obsidian sem depender de um transporte específico. O MVP deve funcionar mesmo sem essa integração. Decisão O domíni"
+    },
+    {
+      "id": "concept:docs-integracao-obsidian-mcp-md:1:objetivo",
+      "label": "Objetivo",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md#objetivo",
+      "summary": "Seção de “Integração futura com Obsidian e MCP”."
+    },
+    {
+      "id": "concept:docs-integracao-obsidian-mcp-md:2:decisao",
+      "label": "Decisão",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md#decisao",
+      "summary": "Seção de “Integração futura com Obsidian e MCP”."
+    },
+    {
+      "id": "concept:docs-integracao-obsidian-mcp-md:3:operacoes-minimas",
+      "label": "Operações mínimas",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md#operacoes-minimas",
+      "summary": "Seção de “Integração futura com Obsidian e MCP”."
+    },
+    {
+      "id": "concept:docs-integracao-obsidian-mcp-md:4:contrato-de-ferramenta-mcp-sugerido",
+      "label": "Contrato de ferramenta MCP sugerido",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md#contrato-de-ferramenta-mcp-sugerido",
+      "summary": "Seção de “Integração futura com Obsidian e MCP”."
+    },
+    {
+      "id": "concept:docs-integracao-obsidian-mcp-md:5:requisitos-do-adaptador",
+      "label": "Requisitos do adaptador",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md#requisitos-do-adaptador",
+      "summary": "Seção de “Integração futura com Obsidian e MCP”."
+    },
+    {
+      "id": "concept:docs-integracao-obsidian-mcp-md:6:configuracao-esperada",
+      "label": "Configuração esperada",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md#configuracao-esperada",
+      "summary": "Seção de “Integração futura com Obsidian e MCP”."
+    },
+    {
+      "id": "concept:docs-integracao-obsidian-mcp-md:7:fluxo-de-sincronizacao",
+      "label": "Fluxo de sincronização",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md#fluxo-de-sincronizacao",
+      "summary": "Seção de “Integração futura com Obsidian e MCP”."
+    },
+    {
+      "id": "concept:docs-integracao-obsidian-mcp-md:8:criterios-de-aceite",
+      "label": "Critérios de aceite",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md#criterios-de-aceite",
+      "summary": "Seção de “Integração futura com Obsidian e MCP”."
+    },
+    {
+      "id": "concept:docs-integracao-obsidian-mcp-md:9:decisoes-ainda-necessarias",
+      "label": "Decisões ainda necessárias",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/INTEGRACAO_OBSIDIAN_MCP.md#decisoes-ainda-necessarias",
+      "summary": "Seção de “Integração futura com Obsidian e MCP”."
+    },
+    {
+      "id": "document:docs-plano-desenvolvimento-md",
+      "label": "Plano de desenvolvimento",
+      "type": "document",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md",
+      "summary": "Plano de desenvolvimento Resultado do MVP Demonstrar uma sessão em que um desenvolvedor trabalha com um agente, enquanto o Maestro mantém o estado da tarefa, detecta uma divergência, solicita aprovação e gera um handoff "
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:1:resultado-do-mvp",
+      "label": "Resultado do MVP",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#resultado-do-mvp",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:2:nao-objetivos",
+      "label": "Não objetivos",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#nao-objetivos",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:3:marcos",
+      "label": "Marcos",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#marcos",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:4:m0-contratos-e-decisoes",
+      "label": "M0 — Contratos e decisões",
+      "type": "detail",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#m0-contratos-e-decisoes",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:5:m1-fatia-vertical-de-observabilidade",
+      "label": "M1 — Fatia vertical de observabilidade",
+      "type": "detail",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#m1-fatia-vertical-de-observabilidade",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:6:m2-planejamento-e-execucao-controlada",
+      "label": "M2 — Planejamento e execução controlada",
+      "type": "detail",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#m2-planejamento-e-execucao-controlada",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:7:m3-maestro-analitico",
+      "label": "M3 — Maestro analítico",
+      "type": "detail",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#m3-maestro-analitico",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:8:m4-aprovacao-humana",
+      "label": "M4 — Aprovação humana",
+      "type": "detail",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#m4-aprovacao-humana",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:9:m5-segundo-cerebro",
+      "label": "M5 — Segundo Cérebro",
+      "type": "detail",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#m5-segundo-cerebro",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:10:m6-evals-e-demo",
+      "label": "M6 — Evals e demo",
+      "type": "detail",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#m6-evals-e-demo",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:11:metricas-alvo-do-prototipo",
+      "label": "Métricas-alvo do protótipo",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#metricas-alvo-do-prototipo",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:12:casos-de-avaliacao",
+      "label": "Casos de avaliação",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#casos-de-avaliacao",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:13:roteiro-da-demonstracao",
+      "label": "Roteiro da demonstração",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#roteiro-da-demonstracao",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "concept:docs-plano-desenvolvimento-md:14:caminho-critico",
+      "label": "Caminho crítico",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/PLANO_DESENVOLVIMENTO.md#caminho-critico",
+      "summary": "Seção de “Plano de desenvolvimento”."
+    },
+    {
+      "id": "document:docs-politicas-md",
+      "label": "Registro de políticas — Maestro",
+      "type": "document",
+      "group": "policy",
+      "status": "rascunho",
+      "path": "docs/POLITICAS.md",
+      "summary": "Registro de políticas — Maestro Status geral: rascunho para validação humana. Até a designação dos responsáveis e aprovadores, ações críticas permanecem bloqueadas por padrão. Fatos de configuração Projeto: Maestro — Pla"
+    },
+    {
+      "id": "concept:docs-politicas-md:1:fatos-de-configuracao",
+      "label": "Fatos de configuração",
+      "type": "concept",
+      "group": "policy",
+      "status": "documented",
+      "path": "docs/POLITICAS.md#fatos-de-configuracao",
+      "summary": "Seção de “Registro de políticas — Maestro”."
+    },
+    {
+      "id": "concept:docs-politicas-md:2:politicas-iniciais",
+      "label": "Políticas iniciais",
+      "type": "concept",
+      "group": "policy",
+      "status": "documented",
+      "path": "docs/POLITICAS.md#politicas-iniciais",
+      "summary": "Seção de “Registro de políticas — Maestro”."
+    },
+    {
+      "id": "concept:docs-politicas-md:3:decisoes-pendentes",
+      "label": "Decisões pendentes",
+      "type": "concept",
+      "group": "policy",
+      "status": "documented",
+      "path": "docs/POLITICAS.md#decisoes-pendentes",
+      "summary": "Seção de “Registro de políticas — Maestro”."
+    },
+    {
+      "id": "concept:docs-politicas-md:4:gate-para-ativacao",
+      "label": "Gate para ativação",
+      "type": "concept",
+      "group": "policy",
+      "status": "documented",
+      "path": "docs/POLITICAS.md#gate-para-ativacao",
+      "summary": "Seção de “Registro de políticas — Maestro”."
+    },
+    {
+      "id": "document:docs-prompt-guardiao-md",
+      "label": "Prompt — Segundo Cérebro e Guardião de Políticas",
+      "type": "document",
+      "group": "agent",
+      "status": "pronto-para-validacao",
+      "path": "docs/PROMPT_GUARDIAO.md",
+      "summary": "Prompt — Segundo Cérebro e Guardião de Políticas Use este prompt no agente responsável por manter o conhecimento operacional no Obsidian e avaliar propostas contra políticas. Bloqueios e autorizações são aplicados pelo P"
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:1:identidade",
+      "label": "Identidade",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#identidade",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:2:configuracao-conhecida",
+      "label": "Configuração conhecida",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#configuracao-conhecida",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:3:principios",
+      "label": "Princípios",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#principios",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:4:responsabilidades",
+      "label": "Responsabilidades",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#responsabilidades",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:5:limites",
+      "label": "Limites",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#limites",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:6:taxonomia-de-resposta",
+      "label": "Taxonomia de resposta",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#taxonomia-de-resposta",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:7:estrutura-do-conhecimento",
+      "label": "Estrutura do conhecimento",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#estrutura-do-conhecimento",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:8:metadados-minimos",
+      "label": "Metadados mínimos",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#metadados-minimos",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:9:comandos-de-conhecimento",
+      "label": "Comandos de conhecimento",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#comandos-de-conhecimento",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:10:comandos-de-governanca",
+      "label": "Comandos de governança",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#comandos-de-governanca",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:11:comandos-administrativos",
+      "label": "Comandos administrativos",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#comandos-administrativos",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:12:fluxo-de-captura",
+      "label": "Fluxo de captura",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#fluxo-de-captura",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:13:fluxo-validar-acao",
+      "label": "Fluxo `/validar-acao`",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#fluxo-validar-acao",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:14:conteudo-recuperado",
+      "label": "Conteúdo recuperado",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#conteudo-recuperado",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:15:condicoes-pendentes",
+      "label": "Condições pendentes",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#condicoes-pendentes",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "concept:docs-prompt-guardiao-md:16:saida",
+      "label": "Saída",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_GUARDIAO.md#saida",
+      "summary": "Seção de “Prompt — Segundo Cérebro e Guardião de Políticas”."
+    },
+    {
+      "id": "document:docs-prompt-mestre-md",
+      "label": "Prompt Mestre — Agente Maestro de Operações",
+      "type": "document",
+      "group": "agent",
+      "status": "pronto-para-validacao",
+      "path": "docs/PROMPT_MESTRE.md",
+      "summary": "Prompt Mestre — Agente Maestro de Operações Use este conteúdo como instrução de sistema do Agente Maestro. Regras críticas de autorização, schema e bloqueio devem ser repetidas e aplicadas em código. Identidade Você é o "
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:1:identidade",
+      "label": "Identidade",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#identidade",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:2:objetivo",
+      "label": "Objetivo",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#objetivo",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:3:usuarios",
+      "label": "Usuários",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#usuarios",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:4:fonte-de-verdade-e-precedencia",
+      "label": "Fonte de verdade e precedência",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#fonte-de-verdade-e-precedencia",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:5:conteudo-nao-confiavel",
+      "label": "Conteúdo não confiável",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#conteudo-nao-confiavel",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:6:taxonomia-obrigatoria",
+      "label": "Taxonomia obrigatória",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#taxonomia-obrigatoria",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:7:ciclo-operacional",
+      "label": "Ciclo operacional",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#ciclo-operacional",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:8:capacidades-permitidas",
+      "label": "Capacidades permitidas",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#capacidades-permitidas",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:9:acoes-proibidas-por-padrao",
+      "label": "Ações proibidas por padrão",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#acoes-proibidas-por-padrao",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:10:aprovacao-e-escalonamento",
+      "label": "Aprovação e escalonamento",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#aprovacao-e-escalonamento",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:11:metricas",
+      "label": "Métricas",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#metricas",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:12:memoria",
+      "label": "Memória",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#memoria",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:13:contrato-de-entrada-dinamica",
+      "label": "Contrato de entrada dinâmica",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#contrato-de-entrada-dinamica",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:14:contrato-de-saida",
+      "label": "Contrato de saída",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#contrato-de-saida",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:15:condicoes-de-conclusao",
+      "label": "Condições de conclusão",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#condicoes-de-conclusao",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:16:falha-segura",
+      "label": "Falha segura",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#falha-segura",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "concept:docs-prompt-mestre-md:17:criterios-de-qualidade",
+      "label": "Critérios de qualidade",
+      "type": "concept",
+      "group": "agent",
+      "status": "documented",
+      "path": "docs/PROMPT_MESTRE.md#criterios-de-qualidade",
+      "summary": "Seção de “Prompt Mestre — Agente Maestro de Operações”."
+    },
+    {
+      "id": "document:docs-segundo-cerebro-visual-md",
+      "label": "Segundo Cérebro Visual",
+      "type": "document",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md",
+      "summary": "Segundo Cérebro Visual Objetivo, aceite e não objetivos Objetivo: oferecer ao líder uma visão navegável das relações entre tarefas, sessões, decisões, riscos, evidências, políticas e componentes do projeto, sem transform"
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:1:objetivo-aceite-e-nao-objetivos",
+      "label": "Objetivo, aceite e não objetivos",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#objetivo-aceite-e-nao-objetivos",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:2:o-que-deve-ser-visualizado",
+      "label": "O que deve ser visualizado",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#o-que-deve-ser-visualizado",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:3:nos",
+      "label": "Nós",
+      "type": "detail",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#nos",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:4:relacoes",
+      "label": "Relações",
+      "type": "detail",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#relacoes",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:5:arquitetura-recomendada",
+      "label": "Arquitetura recomendada",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#arquitetura-recomendada",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:6:contrato-minimo-da-api",
+      "label": "Contrato mínimo da API",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#contrato-minimo-da-api",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:7:experiencia-visual",
+      "label": "Experiência visual",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#experiencia-visual",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:8:seguranca-e-privacidade",
+      "label": "Segurança e privacidade",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#seguranca-e-privacidade",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:9:menor-fatia-vertical",
+      "label": "Menor fatia vertical",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#menor-fatia-vertical",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:10:testes-essenciais",
+      "label": "Testes essenciais",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#testes-essenciais",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "concept:docs-segundo-cerebro-visual-md:11:rollback-e-evolucao",
+      "label": "Rollback e evolução",
+      "type": "concept",
+      "group": "project",
+      "status": "documented",
+      "path": "docs/SEGUNDO_CEREBRO_VISUAL.md#rollback-e-evolucao",
+      "summary": "Seção de “Segundo Cérebro Visual”."
+    },
+    {
+      "id": "document:obsidian-vault-01-projeto-maestro-00-status-inicial-md",
+      "label": "Status inicial do Maestro",
+      "type": "document",
+      "group": "knowledge",
+      "status": "rascunho",
+      "path": "obsidian-vault/01 Projeto Maestro/00 Status Inicial.md",
+      "summary": "Status inicial do Maestro Fatos O projeto é o Maestro — Plataforma de Orquestração Humano–IA. O objetivo é acompanhar e coordenar fluxos de uma operação de desenvolvimento. O ambiente informado inclui Codex e VM Oracle c"
+    },
+    {
+      "id": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:1:fatos",
+      "label": "Fatos",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/01 Projeto Maestro/00 Status Inicial.md#fatos",
+      "summary": "Seção de “Status inicial do Maestro”."
+    },
+    {
+      "id": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:2:inferencias",
+      "label": "Inferências",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/01 Projeto Maestro/00 Status Inicial.md#inferencias",
+      "summary": "Seção de “Status inicial do Maestro”."
+    },
+    {
+      "id": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:3:recomendacoes",
+      "label": "Recomendações",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/01 Projeto Maestro/00 Status Inicial.md#recomendacoes",
+      "summary": "Seção de “Status inicial do Maestro”."
+    },
+    {
+      "id": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:4:riscos-e-bloqueios",
+      "label": "Riscos e bloqueios",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/01 Projeto Maestro/00 Status Inicial.md#riscos-e-bloqueios",
+      "summary": "Seção de “Status inicial do Maestro”."
+    },
+    {
+      "id": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:5:perguntas-abertas",
+      "label": "Perguntas abertas",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/01 Projeto Maestro/00 Status Inicial.md#perguntas-abertas",
+      "summary": "Seção de “Status inicial do Maestro”."
+    },
+    {
+      "id": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "label": "Catálogo de templates",
+      "type": "document",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md",
+      "summary": "Catálogo de templates Todos os templates usam os metadados mínimos do arquivo notacomum.md. Ao instanciar, altere tipo, status, tags e as seções conforme o modelo abaixo. Decisão markdown Decisão — {{titulo}} Contexto Op"
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:1:decisao",
+      "label": "Decisão",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#decisao",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:2:contexto",
+      "label": "Contexto",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#contexto",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:3:opcoes-consideradas",
+      "label": "Opções consideradas",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#opcoes-consideradas",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:4:decisao",
+      "label": "Decisão",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#decisao",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:5:aprovador",
+      "label": "Aprovador",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#aprovador",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:6:consequencias-e-rollback",
+      "label": "Consequências e rollback",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#consequencias-e-rollback",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:7:evidencias",
+      "label": "Evidências",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#evidencias",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:8:risco-ou-bloqueio",
+      "label": "Risco ou bloqueio",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#risco-ou-bloqueio",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:9:descricao",
+      "label": "Descrição",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#descricao",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:10:probabilidade-e-impacto",
+      "label": "Probabilidade e impacto",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#probabilidade-e-impacto",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:11:evidencias",
+      "label": "Evidências",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#evidencias",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:12:mitigacao",
+      "label": "Mitigação",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#mitigacao",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:13:responsavel-e-prazo",
+      "label": "Responsável e prazo",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#responsavel-e-prazo",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:14:evidencia",
+      "label": "Evidência",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#evidencia",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:15:observacao",
+      "label": "Observação",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#observacao",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:16:metodo-de-obtencao",
+      "label": "Método de obtenção",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#metodo-de-obtencao",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:17:integridade",
+      "label": "Integridade",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#integridade",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-catalogo-md:18:limitacoes",
+      "label": "Limitações",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/catalogo.md#limitacoes",
+      "summary": "Seção de “Catálogo de templates”."
+    },
+    {
+      "id": "document:obsidian-vault-99-sistema-templates-nota-comum-md",
+      "label": "{{titulo}}",
+      "type": "document",
+      "group": "knowledge",
+      "status": "rascunho",
+      "path": "obsidian-vault/99 Sistema/Templates/nota-comum.md",
+      "summary": "{{titulo}} Fatos Inferências Fontes"
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-nota-comum-md:1:fatos",
+      "label": "Fatos",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/nota-comum.md#fatos",
+      "summary": "Seção de “{{titulo}}”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-nota-comum-md:2:inferencias",
+      "label": "Inferências",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/nota-comum.md#inferencias",
+      "summary": "Seção de “{{titulo}}”."
+    },
+    {
+      "id": "concept:obsidian-vault-99-sistema-templates-nota-comum-md:3:fontes",
+      "label": "Fontes",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/99 Sistema/Templates/nota-comum.md#fontes",
+      "summary": "Seção de “{{titulo}}”."
+    },
+    {
+      "id": "document:obsidian-vault-readme-md",
+      "label": "Maestro Segundo Cérebro",
+      "type": "document",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/README.md",
+      "summary": "Maestro Segundo Cérebro Vault inicial do conhecimento persistente do Maestro. Pode ser copiado para o Obsidian ou sincronizado futuramente por um adaptador MCP/filesystem. Estruturaalvo text Maestro Segundo Cérebro/ ├── "
+    },
+    {
+      "id": "concept:obsidian-vault-readme-md:1:estrutura-alvo",
+      "label": "Estrutura-alvo",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/README.md#estrutura-alvo",
+      "summary": "Seção de “Maestro Segundo Cérebro”."
+    },
+    {
+      "id": "concept:obsidian-vault-readme-md:2:templates-iniciais",
+      "label": "Templates iniciais",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/README.md#templates-iniciais",
+      "summary": "Seção de “Maestro Segundo Cérebro”."
+    },
+    {
+      "id": "concept:obsidian-vault-readme-md:3:regras",
+      "label": "Regras",
+      "type": "concept",
+      "group": "knowledge",
+      "status": "documented",
+      "path": "obsidian-vault/README.md#regras",
+      "summary": "Seção de “Maestro Segundo Cérebro”."
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:document:readme-md:concept:readme-md:1:problema",
+      "source": "document:readme-md",
+      "target": "concept:readme-md:1:problema",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:readme-md:concept:readme-md:2:proposta",
+      "source": "document:readme-md",
+      "target": "concept:readme-md:2:proposta",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:readme-md:concept:readme-md:3:arquitetura-do-mvp",
+      "source": "document:readme-md",
+      "target": "concept:readme-md:3:arquitetura-do-mvp",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:readme-md:concept:readme-md:4:documentacao",
+      "source": "document:readme-md",
+      "target": "concept:readme-md:4:documentacao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:readme-md:concept:readme-md:5:escopo-do-hackathon",
+      "source": "document:readme-md",
+      "target": "concept:readme-md:5:escopo-do-hackathon",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:readme-md:concept:readme-md:6:principios",
+      "source": "document:readme-md",
+      "target": "concept:readme-md:6:principios",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:readme-md:concept:readme-md:7:estado-do-projeto",
+      "source": "document:readme-md",
+      "target": "concept:readme-md:7:estado-do-projeto",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:readme-md:concept:readme-md:8:executar-o-segundo-cerebro-visual",
+      "source": "document:readme-md",
+      "target": "concept:readme-md:8:executar-o-segundo-cerebro-visual",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:readme-md:concept:readme-md:9:licenca",
+      "source": "document:readme-md",
+      "target": "concept:readme-md:9:licenca",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:1:decisao",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:1:decisao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:2:contexto-e-premissas",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:2:contexto-e-premissas",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:3:componentes",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:3:componentes",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:4:limites-dos-modulos",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:4:limites-dos-modulos",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:5:fluxo-de-uma-acao",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:5:fluxo-de-uma-acao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:6:modelo-de-consistencia",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:6:modelo-de-consistencia",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:7:portas-principais",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:7:portas-principais",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:8:fronteiras-de-confianca",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:8:fronteiras-de-confianca",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:9:falhas-e-recuperacao",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:9:falhas-e-recuperacao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:10:stack-proposta",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:10:stack-proposta",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-arquitetura-md:concept:docs-arquitetura-md:11:evolucao",
+      "source": "document:docs-arquitetura-md",
+      "target": "concept:docs-arquitetura-md:11:evolucao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-integracao-obsidian-mcp-md:concept:docs-integracao-obsidian-mcp-md:1:objetivo",
+      "source": "document:docs-integracao-obsidian-mcp-md",
+      "target": "concept:docs-integracao-obsidian-mcp-md:1:objetivo",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-integracao-obsidian-mcp-md:concept:docs-integracao-obsidian-mcp-md:2:decisao",
+      "source": "document:docs-integracao-obsidian-mcp-md",
+      "target": "concept:docs-integracao-obsidian-mcp-md:2:decisao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-integracao-obsidian-mcp-md:concept:docs-integracao-obsidian-mcp-md:3:operacoes-minimas",
+      "source": "document:docs-integracao-obsidian-mcp-md",
+      "target": "concept:docs-integracao-obsidian-mcp-md:3:operacoes-minimas",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-integracao-obsidian-mcp-md:concept:docs-integracao-obsidian-mcp-md:4:contrato-de-ferramenta-mcp-sugerido",
+      "source": "document:docs-integracao-obsidian-mcp-md",
+      "target": "concept:docs-integracao-obsidian-mcp-md:4:contrato-de-ferramenta-mcp-sugerido",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-integracao-obsidian-mcp-md:concept:docs-integracao-obsidian-mcp-md:5:requisitos-do-adaptador",
+      "source": "document:docs-integracao-obsidian-mcp-md",
+      "target": "concept:docs-integracao-obsidian-mcp-md:5:requisitos-do-adaptador",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-integracao-obsidian-mcp-md:concept:docs-integracao-obsidian-mcp-md:6:configuracao-esperada",
+      "source": "document:docs-integracao-obsidian-mcp-md",
+      "target": "concept:docs-integracao-obsidian-mcp-md:6:configuracao-esperada",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-integracao-obsidian-mcp-md:concept:docs-integracao-obsidian-mcp-md:7:fluxo-de-sincronizacao",
+      "source": "document:docs-integracao-obsidian-mcp-md",
+      "target": "concept:docs-integracao-obsidian-mcp-md:7:fluxo-de-sincronizacao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-integracao-obsidian-mcp-md:concept:docs-integracao-obsidian-mcp-md:8:criterios-de-aceite",
+      "source": "document:docs-integracao-obsidian-mcp-md",
+      "target": "concept:docs-integracao-obsidian-mcp-md:8:criterios-de-aceite",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-integracao-obsidian-mcp-md:concept:docs-integracao-obsidian-mcp-md:9:decisoes-ainda-necessarias",
+      "source": "document:docs-integracao-obsidian-mcp-md",
+      "target": "concept:docs-integracao-obsidian-mcp-md:9:decisoes-ainda-necessarias",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:1:resultado-do-mvp",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:1:resultado-do-mvp",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:2:nao-objetivos",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:2:nao-objetivos",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:3:marcos",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:3:marcos",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:4:m0-contratos-e-decisoes",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:4:m0-contratos-e-decisoes",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:5:m1-fatia-vertical-de-observabilidade",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:5:m1-fatia-vertical-de-observabilidade",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:6:m2-planejamento-e-execucao-controlada",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:6:m2-planejamento-e-execucao-controlada",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:7:m3-maestro-analitico",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:7:m3-maestro-analitico",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:8:m4-aprovacao-humana",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:8:m4-aprovacao-humana",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:9:m5-segundo-cerebro",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:9:m5-segundo-cerebro",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:10:m6-evals-e-demo",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:10:m6-evals-e-demo",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:11:metricas-alvo-do-prototipo",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:11:metricas-alvo-do-prototipo",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:12:casos-de-avaliacao",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:12:casos-de-avaliacao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:13:roteiro-da-demonstracao",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:13:roteiro-da-demonstracao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-plano-desenvolvimento-md:concept:docs-plano-desenvolvimento-md:14:caminho-critico",
+      "source": "document:docs-plano-desenvolvimento-md",
+      "target": "concept:docs-plano-desenvolvimento-md:14:caminho-critico",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-politicas-md:concept:docs-politicas-md:1:fatos-de-configuracao",
+      "source": "document:docs-politicas-md",
+      "target": "concept:docs-politicas-md:1:fatos-de-configuracao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-politicas-md:concept:docs-politicas-md:2:politicas-iniciais",
+      "source": "document:docs-politicas-md",
+      "target": "concept:docs-politicas-md:2:politicas-iniciais",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-politicas-md:concept:docs-politicas-md:3:decisoes-pendentes",
+      "source": "document:docs-politicas-md",
+      "target": "concept:docs-politicas-md:3:decisoes-pendentes",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-politicas-md:concept:docs-politicas-md:4:gate-para-ativacao",
+      "source": "document:docs-politicas-md",
+      "target": "concept:docs-politicas-md:4:gate-para-ativacao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:1:identidade",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:1:identidade",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:2:configuracao-conhecida",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:2:configuracao-conhecida",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:3:principios",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:3:principios",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:4:responsabilidades",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:4:responsabilidades",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:5:limites",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:5:limites",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:6:taxonomia-de-resposta",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:6:taxonomia-de-resposta",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:7:estrutura-do-conhecimento",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:7:estrutura-do-conhecimento",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:8:metadados-minimos",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:8:metadados-minimos",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:9:comandos-de-conhecimento",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:9:comandos-de-conhecimento",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:10:comandos-de-governanca",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:10:comandos-de-governanca",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:11:comandos-administrativos",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:11:comandos-administrativos",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:12:fluxo-de-captura",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:12:fluxo-de-captura",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:13:fluxo-validar-acao",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:13:fluxo-validar-acao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:14:conteudo-recuperado",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:14:conteudo-recuperado",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:15:condicoes-pendentes",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:15:condicoes-pendentes",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-guardiao-md:concept:docs-prompt-guardiao-md:16:saida",
+      "source": "document:docs-prompt-guardiao-md",
+      "target": "concept:docs-prompt-guardiao-md:16:saida",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:1:identidade",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:1:identidade",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:2:objetivo",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:2:objetivo",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:3:usuarios",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:3:usuarios",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:4:fonte-de-verdade-e-precedencia",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:4:fonte-de-verdade-e-precedencia",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:5:conteudo-nao-confiavel",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:5:conteudo-nao-confiavel",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:6:taxonomia-obrigatoria",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:6:taxonomia-obrigatoria",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:7:ciclo-operacional",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:7:ciclo-operacional",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:8:capacidades-permitidas",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:8:capacidades-permitidas",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:9:acoes-proibidas-por-padrao",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:9:acoes-proibidas-por-padrao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:10:aprovacao-e-escalonamento",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:10:aprovacao-e-escalonamento",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:11:metricas",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:11:metricas",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:12:memoria",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:12:memoria",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:13:contrato-de-entrada-dinamica",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:13:contrato-de-entrada-dinamica",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:14:contrato-de-saida",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:14:contrato-de-saida",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:15:condicoes-de-conclusao",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:15:condicoes-de-conclusao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:16:falha-segura",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:16:falha-segura",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-prompt-mestre-md:concept:docs-prompt-mestre-md:17:criterios-de-qualidade",
+      "source": "document:docs-prompt-mestre-md",
+      "target": "concept:docs-prompt-mestre-md:17:criterios-de-qualidade",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:1:objetivo-aceite-e-nao-objetivos",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:1:objetivo-aceite-e-nao-objetivos",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:2:o-que-deve-ser-visualizado",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:2:o-que-deve-ser-visualizado",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:3:nos",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:3:nos",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:4:relacoes",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:4:relacoes",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:5:arquitetura-recomendada",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:5:arquitetura-recomendada",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:6:contrato-minimo-da-api",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:6:contrato-minimo-da-api",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:7:experiencia-visual",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:7:experiencia-visual",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:8:seguranca-e-privacidade",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:8:seguranca-e-privacidade",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:9:menor-fatia-vertical",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:9:menor-fatia-vertical",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:10:testes-essenciais",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:10:testes-essenciais",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:docs-segundo-cerebro-visual-md:concept:docs-segundo-cerebro-visual-md:11:rollback-e-evolucao",
+      "source": "document:docs-segundo-cerebro-visual-md",
+      "target": "concept:docs-segundo-cerebro-visual-md:11:rollback-e-evolucao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-01-projeto-maestro-00-status-inicial-md:concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:1:fatos",
+      "source": "document:obsidian-vault-01-projeto-maestro-00-status-inicial-md",
+      "target": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:1:fatos",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-01-projeto-maestro-00-status-inicial-md:concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:2:inferencias",
+      "source": "document:obsidian-vault-01-projeto-maestro-00-status-inicial-md",
+      "target": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:2:inferencias",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-01-projeto-maestro-00-status-inicial-md:concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:3:recomendacoes",
+      "source": "document:obsidian-vault-01-projeto-maestro-00-status-inicial-md",
+      "target": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:3:recomendacoes",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-01-projeto-maestro-00-status-inicial-md:concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:4:riscos-e-bloqueios",
+      "source": "document:obsidian-vault-01-projeto-maestro-00-status-inicial-md",
+      "target": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:4:riscos-e-bloqueios",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-01-projeto-maestro-00-status-inicial-md:concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:5:perguntas-abertas",
+      "source": "document:obsidian-vault-01-projeto-maestro-00-status-inicial-md",
+      "target": "concept:obsidian-vault-01-projeto-maestro-00-status-inicial-md:5:perguntas-abertas",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:1:decisao",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:1:decisao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:2:contexto",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:2:contexto",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:3:opcoes-consideradas",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:3:opcoes-consideradas",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:4:decisao",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:4:decisao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:5:aprovador",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:5:aprovador",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:6:consequencias-e-rollback",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:6:consequencias-e-rollback",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:7:evidencias",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:7:evidencias",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:8:risco-ou-bloqueio",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:8:risco-ou-bloqueio",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:9:descricao",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:9:descricao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:10:probabilidade-e-impacto",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:10:probabilidade-e-impacto",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:11:evidencias",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:11:evidencias",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:12:mitigacao",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:12:mitigacao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:13:responsavel-e-prazo",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:13:responsavel-e-prazo",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:14:evidencia",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:14:evidencia",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:15:observacao",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:15:observacao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:16:metodo-de-obtencao",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:16:metodo-de-obtencao",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:17:integridade",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:17:integridade",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-catalogo-md:concept:obsidian-vault-99-sistema-templates-catalogo-md:18:limitacoes",
+      "source": "document:obsidian-vault-99-sistema-templates-catalogo-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-catalogo-md:18:limitacoes",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-nota-comum-md:concept:obsidian-vault-99-sistema-templates-nota-comum-md:1:fatos",
+      "source": "document:obsidian-vault-99-sistema-templates-nota-comum-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-nota-comum-md:1:fatos",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-nota-comum-md:concept:obsidian-vault-99-sistema-templates-nota-comum-md:2:inferencias",
+      "source": "document:obsidian-vault-99-sistema-templates-nota-comum-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-nota-comum-md:2:inferencias",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-99-sistema-templates-nota-comum-md:concept:obsidian-vault-99-sistema-templates-nota-comum-md:3:fontes",
+      "source": "document:obsidian-vault-99-sistema-templates-nota-comum-md",
+      "target": "concept:obsidian-vault-99-sistema-templates-nota-comum-md:3:fontes",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-readme-md:concept:obsidian-vault-readme-md:1:estrutura-alvo",
+      "source": "document:obsidian-vault-readme-md",
+      "target": "concept:obsidian-vault-readme-md:1:estrutura-alvo",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-readme-md:concept:obsidian-vault-readme-md:2:templates-iniciais",
+      "source": "document:obsidian-vault-readme-md",
+      "target": "concept:obsidian-vault-readme-md:2:templates-iniciais",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:obsidian-vault-readme-md:concept:obsidian-vault-readme-md:3:regras",
+      "source": "document:obsidian-vault-readme-md",
+      "target": "concept:obsidian-vault-readme-md:3:regras",
+      "relation": "CONTAINS"
+    },
+    {
+      "id": "edge:document:readme-md:document:docs-prompt-mestre-md",
+      "source": "document:readme-md",
+      "target": "document:docs-prompt-mestre-md",
+      "relation": "REFERENCES"
+    },
+    {
+      "id": "edge:document:readme-md:document:docs-prompt-guardiao-md",
+      "source": "document:readme-md",
+      "target": "document:docs-prompt-guardiao-md",
+      "relation": "REFERENCES"
+    },
+    {
+      "id": "edge:document:readme-md:document:docs-arquitetura-md",
+      "source": "document:readme-md",
+      "target": "document:docs-arquitetura-md",
+      "relation": "REFERENCES"
+    },
+    {
+      "id": "edge:document:readme-md:document:docs-politicas-md",
+      "source": "document:readme-md",
+      "target": "document:docs-politicas-md",
+      "relation": "REFERENCES"
+    },
+    {
+      "id": "edge:document:readme-md:document:docs-integracao-obsidian-mcp-md",
+      "source": "document:readme-md",
+      "target": "document:docs-integracao-obsidian-mcp-md",
+      "relation": "REFERENCES"
+    },
+    {
+      "id": "edge:document:readme-md:document:docs-segundo-cerebro-visual-md",
+      "source": "document:readme-md",
+      "target": "document:docs-segundo-cerebro-visual-md",
+      "relation": "REFERENCES"
+    },
+    {
+      "id": "edge:document:readme-md:document:docs-plano-desenvolvimento-md",
+      "source": "document:readme-md",
+      "target": "document:docs-plano-desenvolvimento-md",
+      "relation": "REFERENCES"
+    },
+    {
+      "id": "edge:document:readme-md:document:obsidian-vault-readme-md",
+      "source": "document:readme-md",
+      "target": "document:obsidian-vault-readme-md",
+      "relation": "REFERENCES"
+    }
+  ],
+  "source_count": 12,
+  "integrity": "10baabc2b4cbea6362ba7ffb687c86f660a3e34251b6925f7d648c409183bcf9"
+}

@@ -43,6 +43,7 @@ O MVP será um monólito modular orientado a eventos. Obsidian e MCP entram por 
 - [Arquitetura](docs/ARQUITETURA.md)
 - [Registro de políticas](docs/POLITICAS.md)
 - [Integração Obsidian/MCP](docs/INTEGRACAO_OBSIDIAN_MCP.md)
+- [Segundo Cérebro Visual](docs/SEGUNDO_CEREBRO_VISUAL.md)
 - [Plano de desenvolvimento](docs/PLANO_DESENVOLVIMENTO.md)
 - [Contrato de eventos](schemas/maestro-event.schema.json)
 - [Contrato de relatório](schemas/maestro-report.schema.json)
@@ -64,6 +65,20 @@ Uma sessão instrumentada, um agente executor, um Maestro analítico, aprovaçã
 ## Estado do projeto
 
 **Fase:** especificação pronta para iniciar a primeira fatia vertical.
+
+## Executar o Segundo Cérebro Visual
+
+O protótipo transforma os documentos Markdown do repositório e do vault em uma
+projeção navegável, sem enviar conteúdo para serviços externos:
+
+```bash
+npm run build:graph
+npm run serve
+```
+
+Abra `http://localhost:4173`. A interface oferece busca, filtros por camada,
+zoom, navegação e proveniência de cada nó. Para confirmar que a projeção versionada
+está atualizada, execute `npm run check`.
 
 **Repositório:** [DanielRobertoRibeiro/hackathon_openai_sp](https://github.com/DanielRobertoRibeiro/hackathon_openai_sp)
 

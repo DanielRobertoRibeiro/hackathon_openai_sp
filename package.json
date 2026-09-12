@@ -1,0 +1,9 @@
+{
+  "name": "maestro-visual-brain",
+  "private": true,
+  "scripts": {
+    "build:graph": "node scripts/build-knowledge-graph.mjs",
+    "check": "node --check scripts/build-knowledge-graph.mjs && node --check visual-brain/app.js && node scripts/build-knowledge-graph.mjs --check && node --test tests/knowledge-graph.test.mjs",
+    "serve": "python -m http.server 4173 -d visual-brain"
+  }
+}

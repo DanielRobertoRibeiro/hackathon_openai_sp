@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projeção visual e navegável do Segundo Cérebro do Maestro." />
+    <title>Maestro — Segundo Cérebro Visual</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Maestro, início">
+        <span class="brand-mark">M</span>
+        <span><strong>Maestro</strong><small>Segundo Cérebro Visual</small></span>
+      </a>
+      <div class="top-actions">
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar conhecimento…" /></label>
+        <button class="icon-button" id="reset-view" type="button" title="Centralizar grafo" aria-label="Centralizar grafo">⌖</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="sidebar" aria-label="Navegação do conhecimento">
+        <div class="sidebar-heading"><p>Garden of knowledge</p><button id="collapse" aria-label="Recolher navegação">«</button></div>
+        <nav id="folders"></nav>
+        <section class="filters">
+          <p>Camadas</p>
+          <div id="filter-list"></div>
+        </section>
+        <div class="vault-health"><span></span><div><strong>Projeção local</strong><small id="source-count">Carregando fontes…</small></div></div>
+      </aside>
+
+      <section class="graph-shell" aria-label="Grafo de conhecimento">
+        <canvas id="graph" tabindex="0" aria-label="Grafo interativo. Use a lista de resultados para navegação por teclado."></canvas>
+        <div class="graph-heading">
+          <span class="eyebrow">Projeto / Maestro</span>
+          <h1>Mapa de conhecimento</h1>
+          <p id="graph-stats">Construindo relações verificáveis…</p>
+        </div>
+        <div class="zoom-controls" aria-label="Controles do grafo">
+          <button id="zoom-in" aria-label="Aumentar zoom">+</button>
+          <button id="zoom-out" aria-label="Diminuir zoom">−</button>
+        </div>
+        <div class="legend" id="legend"></div>
+        <div class="empty-state" id="empty-state" hidden>Nenhum nó corresponde aos filtros.</div>
+      </section>
+
+      <aside class="details" id="details" aria-live="polite">
+        <button class="close-details" id="close-details" aria-label="Fechar detalhes">×</button>
+        <div id="details-content">
+          <span class="eyebrow">Contexto verificável</span>
+          <h2>Explore as conexões</h2>
+          <p>Selecione um nó para consultar sua origem, classificação e relações. O grafo é uma projeção; os documentos continuam sendo a fonte.</p>
+          <div class="tip"><strong>Dica</strong><span>Arraste para navegar, use a roda para zoom e clique em qualquer ponto colorido.</span></div>
+        </div>
+        <section class="results"><p>Conhecimento visível</p><div id="result-list"></div></section>
+      </aside>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
