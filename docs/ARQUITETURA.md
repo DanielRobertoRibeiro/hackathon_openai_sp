@@ -4,6 +4,8 @@
 
 O MVP será um **monólito modular orientado a eventos**, com armazenamento transacional único e integrações atrás de portas. Essa escolha reduz custo operacional e mantém uma evolução futura para workers ou serviços separados sem antecipar complexidade.
 
+Na implementação atual do hackathon, o event store usa um arquivo JSON local com escrita serializada e atômica, atrás da porta `EventStore`. PostgreSQL permanece como evolução de produção, sem alterar os contratos da aplicação.
+
 ## Contexto e premissas
 
 - hackathon com prazo curto;

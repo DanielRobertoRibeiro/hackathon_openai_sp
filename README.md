@@ -63,9 +63,45 @@ Uma sessão instrumentada, um agente executor, um Maestro analítico, aprovaçã
 
 ## Estado do projeto
 
-**Fase:** especificação pronta para iniciar a primeira fatia vertical.
+**Fase:** MVP funcional com agente, policy engine, aprovações, timeline e Knowledge Port.
 
 **Repositório:** [DanielRobertoRibeiro/hackathon_openai_sp](https://github.com/DanielRobertoRibeiro/hackathon_openai_sp)
+
+## Executar localmente
+
+Requisitos: Node.js 20+ e pnpm.
+
+```bash
+pnpm install
+cp .env.example .env.local
+pnpm dev
+```
+
+Abra `http://localhost:3000` e escolha **Executar cenário demo**. Sem `OPENAI_API_KEY`, o sistema usa o baseline determinístico. Para ativar o agente OpenAI:
+
+```dotenv
+OPENAI_API_KEY=...
+MAESTRO_AGENT_MODE=openai
+OPENAI_MODEL=gpt-5.6-terra
+```
+
+## Conectar o Obsidian
+
+O modo local já implementa o contrato do vault:
+
+```dotenv
+KNOWLEDGE_ADAPTER=filesystem
+OBSIDIAN_VAULT_PATH=/caminho/do/vault
+OBSIDIAN_ALLOWED_PREFIXES=01 Projeto Maestro
+```
+
+Para MCP, implemente `McpToolClient` em `src/knowledge/mcp-adapter.ts` e injete o transporte escolhido. O domínio e o agente não precisam ser alterados.
+
+## Verificação
+
+```bash
+pnpm check
+```
 
 ## Licença
 
