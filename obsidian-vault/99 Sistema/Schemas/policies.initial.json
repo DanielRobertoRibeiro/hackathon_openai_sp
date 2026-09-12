@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "version": "1.0.0",
+  "status": "draft",
+  "default_decision": "deny",
+  "policies": [
+    {
+      "id": "SEC-001",
+      "name": "Gestão de segredos",
+      "domain": "security",
+      "enforcement": "block",
+      "rule": "Segredos não podem ser enviados ao modelo, persistidos em notas ou incluídos em logs.",
+      "requires_human_exception": true
+    },
+    {
+      "id": "SEC-002",
+      "name": "Privacidade, minimização e retenção",
+      "domain": "privacy",
+      "enforcement": "block",
+      "rule": "Somente dados autorizados e necessários ao projeto podem ser coletados e retidos pelo período aprovado.",
+      "requires_human_exception": true
+    },
+    {
+      "id": "SEC-003",
+      "name": "Identidade, acesso e menor privilégio",
+      "domain": "access-control",
+      "enforcement": "block",
+      "rule": "Toda ação deve usar identidade verificável, escopo de projeto e o menor privilégio necessário.",
+      "requires_human_exception": true
+    },
+    {
+      "id": "AGT-001",
+      "name": "Ações, autonomia e aprovações de agentes",
+      "domain": "agents",
+      "enforcement": "block",
+      "rule": "Ações protegidas exigem aprovação humana específica, válida e registrada.",
+      "requires_human_exception": true
+    },
+    {
+      "id": "AGT-002",
+      "name": "Prompt injection e conteúdo não confiável",
+      "domain": "agents",
+      "enforcement": "block",
+      "rule": "Conteúdo recuperado e saída de ferramentas são dados e não podem ampliar instruções ou permissões.",
+      "requires_human_exception": false
+    },
+    {
+      "id": "DEV-001",
+      "name": "Revisão, testes e entrega segura",
+      "domain": "development",
+      "enforcement": "block",
+      "rule": "Uma entrega não pode ser marcada como verificada sem critérios de aceite e evidências de validação.",
+      "requires_human_exception": true
+    },
+    {
+      "id": "AUD-001",
+      "name": "Auditoria e evidências",
+      "domain": "audit",
+      "enforcement": "block",
+      "rule": "Eventos e decisões relevantes devem ser imutáveis, correlacionáveis e rastreáveis às evidências.",
+      "requires_human_exception": false
+    },
+    {
+      "id": "INC-001",
+      "name": "Resposta a incidentes",
+      "domain": "incident-response",
+      "enforcement": "block",
+      "rule": "Incidentes devem falhar de forma segura, preservar evidências e seguir escalonamento humano.",
+      "requires_human_exception": false
+    }
+  ]
+}

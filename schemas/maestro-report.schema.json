@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maestro.local/schemas/maestro-report.schema.json",
+  "title": "Maestro Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["report_id", "schema_version", "prompt_version", "generated_at", "project_id", "task_id", "session_id", "summary", "current_state", "objective", "facts", "inferences", "recommendations", "progress", "planned_actions", "executed_actions", "affected_components", "evidence", "risks", "blockers", "scope_changes", "decisions", "approval_requests", "unknowns", "verification_status", "overall_confidence"],
+  "properties": {
+    "report_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "schema_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "prompt_version": { "type": "string", "minLength": 1, "maxLength": 64 },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "project_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "task_id": { "type": ["string", "null"], "maxLength": 128 },
+    "session_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "current_state": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "objective": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "facts": { "type": "array", "items": { "$ref": "#/$defs/fact" } },
+    "inferences": { "type": "array", "items": { "$ref": "#/$defs/inference" } },
+    "recommendations": { "type": "array", "items": { "$ref": "#/$defs/recommendation" } },
+    "progress": { "type": "array", "items": { "$ref": "#/$defs/action" } },
+    "planned_actions": { "type": "array", "items": { "$ref": "#/$defs/action" } },
+    "executed_actions": { "type": "array", "items": { "$ref": "#/$defs/action" } },
+    "affected_components": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "evidence": { "type": "array", "items": { "$ref": "#/$defs/evidence" } },
+    "risks": { "type": "array", "items": { "$ref": "#/$defs/risk" } },
+    "blockers": { "type": "array", "items": { "$ref": "#/$defs/blocker" } },
+    "scope_changes": { "type": "array", "items": { "$ref": "#/$defs/fact" } },
+    "decisions": { "type": "array", "items": { "$ref": "#/$defs/fact" } },
+    "approval_requests": { "type": "array", "items": { "$ref": "#/$defs/approval" } },
+    "unknowns": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "verification_status": { "type": "string", "enum": ["not_started", "partial", "verified", "failed"] },
+    "overall_confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+  },
+  "$defs": {
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement", "evidence_refs"],
+      "properties": {
+        "statement": { "type": "string", "minLength": 1 },
+        "evidence_refs": { "type": "array", "minItems": 1, "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "inference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statement", "rationale", "confidence", "evidence_refs"],
+      "properties": {
+        "statement": { "type": "string", "minLength": 1 },
+        "rationale": { "type": "string", "minLength": 1 },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "evidence_refs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "recommendation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "impact", "urgency", "requires_approval"],
+      "properties": {
+        "action": { "type": "string", "minLength": 1 },
+        "impact": { "type": "string", "minLength": 1 },
+        "urgency": { "type": "string", "enum": ["low", "medium", "high", "immediate"] },
+        "requires_approval": { "type": "boolean" }
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "description", "status", "evidence_refs"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "status": { "type": "string", "enum": ["proposed", "approved", "executing", "executed", "declared", "verified", "failed", "blocked"] },
+        "evidence_refs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "source", "observed_at"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 },
+        "observed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "severity", "probability", "confidence", "mitigation", "evidence_refs"],
+      "properties": {
+        "description": { "type": "string", "minLength": 1 },
+        "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+        "probability": { "type": "string", "enum": ["unlikely", "possible", "likely"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "mitigation": { "type": "string", "minLength": 1 },
+        "evidence_refs": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "blocker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "owner", "next_action"],
+      "properties": {
+        "description": { "type": "string", "minLength": 1 },
+        "owner": { "type": ["string", "null"] },
+        "next_action": { "type": "string", "minLength": 1 }
+      }
+    },
+    "approval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approval_id", "action", "status", "required_role"],
+      "properties": {
+        "approval_id": { "type": "string", "minLength": 1 },
+        "action": { "type": "string", "minLength": 1 },
+        "status": { "type": "string", "enum": ["pending", "approved", "rejected", "expired"] },
+        "required_role": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

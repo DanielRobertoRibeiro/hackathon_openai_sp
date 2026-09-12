@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maestro.local/schemas/maestro-event.schema.json",
+  "title": "Maestro Event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "event_type",
+    "schema_version",
+    "occurred_at",
+    "received_at",
+    "project_id",
+    "session_id",
+    "actor",
+    "source",
+    "correlation_id",
+    "payload",
+    "sensitivity"
+  ],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "task.started",
+        "prompt.submitted",
+        "plan.proposed",
+        "plan.approved",
+        "tool.requested",
+        "tool.completed",
+        "file.change.proposed",
+        "file.changed",
+        "verification.completed",
+        "risk.detected",
+        "approval.requested",
+        "approval.resolved",
+        "blocker.detected",
+        "scope.changed",
+        "session.completed",
+        "handoff.generated",
+        "knowledge.sync.requested",
+        "knowledge.sync.completed",
+        "knowledge.sync.failed"
+      ]
+    },
+    "schema_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "occurred_at": { "type": "string", "format": "date-time" },
+    "received_at": { "type": "string", "format": "date-time" },
+    "organization_id": { "type": ["string", "null"], "maxLength": 128 },
+    "project_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "workflow_id": { "type": ["string", "null"], "maxLength": 128 },
+    "task_id": { "type": ["string", "null"], "maxLength": 128 },
+    "session_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "id"],
+      "properties": {
+        "type": { "type": "string", "enum": ["human", "agent", "service", "tool"] },
+        "id": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "role": { "type": ["string", "null"], "maxLength": 128 }
+      }
+    },
+    "source": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "correlation_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "causation_id": { "type": ["string", "null"], "maxLength": 128 },
+    "idempotency_key": { "type": ["string", "null"], "maxLength": 256 },
+    "payload": { "type": "object" },
+    "sensitivity": { "type": "string", "enum": ["public", "internal", "confidential", "restricted"] },
+    "consent_scope": { "type": ["string", "null"], "maxLength": 256 },
+    "evidence_refs": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 256 },
+      "uniqueItems": true
+    },
+    "integrity": {
+      "type": ["object", "null"],
+      "properties": {
+        "hash": { "type": "string" },
+        "algorithm": { "type": "string" }
+      },
+      "required": ["hash", "algorithm"],
+      "additionalProperties": false
+    }
+  }
+}
