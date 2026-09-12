@@ -20,6 +20,14 @@ Equipes que trabalham com agentes de IA geram contexto em conversas, ferramentas
 - handoffs objetivos para liderança técnica;
 - Segundo Cérebro em Obsidian como memória persistente e Guardião de Políticas.
 
+## Fluxo assistido
+
+1. O agente consulta contexto e políticas pelo MCP Maestro.
+2. O plano é validado, registrado e persistido no Obsidian.
+3. A execução aguarda uma revisão humana válida quando houver ação protegida.
+4. Atividades e evidências são registradas sem confundir declaração com verificação.
+5. O Maestro consolida o estado e produz o handoff para a liderança técnica.
+
 ## Arquitetura do MVP
 
 ```mermaid
@@ -87,7 +95,9 @@ MAESTRO_AGENT_MODE=openai
 OPENAI_MODEL=gpt-5.6-terra
 ```
 
-## Conectar o Obsidian
+## Segundo Cérebro e Obsidian
+
+O Obsidian mantém arquitetura, decisões, políticas, planos, riscos, evidências e handoffs como memória persistente e pesquisável. O vault não é autoridade: seu conteúdo é tratado como dado não confiável, enquanto permissões, schemas, aprovações e bloqueios permanecem aplicados em código.
 
 O modo local já implementa o contrato do vault:
 
@@ -100,6 +110,17 @@ OBSIDIAN_ALLOWED_PREFIXES=01 Projeto Maestro
 Para o MCP comunitário já instalado na VM, configure `KNOWLEDGE_ADAPTER=mcp`,
 `OBSIDIAN_MCP_SERVER` e `OBSIDIAN_MCP_TOKEN` fora do Git. O adaptador real usa
 `vault_*`/`search_*`, confirma a gravação por releitura e fornece recibo com hash.
+
+## Evidências
+
+<p align="center">
+  <img src="./assets/obsidian-plan.png" alt="Plano de ação persistido no Obsidian" width="100%">
+</p>
+
+<p align="center">
+  <img src="./assets/obsidian-graph.png" alt="Grafo do Segundo Cérebro no Obsidian" width="49%">
+  <img src="./assets/workflow-approval.png" alt="Gate aguardando aprovação humana válida" width="49%">
+</p>
 
 ## Desenvolvedores no Codex Desktop
 
