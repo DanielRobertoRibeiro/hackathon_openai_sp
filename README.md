@@ -1,6 +1,4 @@
-<video src="./assets/agente-hacktown-openai.mp4" controls width="100%" aria-label="Vídeo de apresentação do Agente HackTown OpenAI"></video>
-
-[▶️ Assistir ao vídeo de apresentação](./assets/agente-hacktown-openai.mp4?raw=1)
+[▶️ **Assistir ao vídeo de apresentação do Agente HackTown OpenAI**](./assets/agente-hacktown-openai.mp4?raw=1)
 
 # Maestro
 
