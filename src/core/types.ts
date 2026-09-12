@@ -145,6 +145,7 @@ export interface ReportAction {
 }
 
 export interface SessionState {
+  knowledge_context?: Array<{ path: string; excerpt: string; version: string }>;
   project_id: string;
   session_id: string;
   task_id: string | null;

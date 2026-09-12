@@ -21,7 +21,9 @@ export class MaestroStore {
       const duplicate = database.events.find(
         (item) =>
           item.event_id === event.event_id ||
-          (event.idempotency_key !== null && item.idempotency_key === event.idempotency_key),
+          (event.idempotency_key !== null && item.idempotency_key === event.idempotency_key &&
+            item.project_id === event.project_id && item.session_id === event.session_id &&
+            item.source === event.source && item.actor.id === event.actor.id),
       );
       if (duplicate) return { event: duplicate, duplicate: true };
       database.events.push(event);
@@ -116,8 +118,8 @@ export class MaestroStore {
     const task = this.queue.then(async () => {
       const database = await this.read();
       const result = await operation(database);
-      this.data = database;
       await this.persist(database);
+      this.data = database;
       return result;
     });
     this.queue = task.catch(() => undefined);

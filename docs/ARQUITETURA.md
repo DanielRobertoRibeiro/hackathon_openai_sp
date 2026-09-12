@@ -1,5 +1,15 @@
 # Arquitetura do Maestro
 
+## Atualização — fluxo Codex/Obsidian implementado em 2026-09-12
+
+O adaptador MCP real e o gateway autenticado estão implementados; ver
+[CODEX_WORKFLOW.md](CODEX_WORKFLOW.md) e `src/knowledge/obsidian-mcp.ts`. A regra nova de negócio
+é uma exceção explícita ao modo assíncrono descrito abaixo: **planos de ação
+precisam de recibo confirmado no Obsidian antes de liberar execução**. Relatórios
+e atividades continuam preservados no event store quando a escrita externa falha.
+Hooks do Codex aplicam o gate no fluxo instrumentado, não em ferramentas externas
+ou clientes sem hooks. O gateway público não expõe APIs legadas de demo.
+
 ## Decisão
 
 O MVP será um **monólito modular orientado a eventos**, com armazenamento transacional único e integrações atrás de portas. Essa escolha reduz custo operacional e mantém uma evolução futura para workers ou serviços separados sem antecipar complexidade.

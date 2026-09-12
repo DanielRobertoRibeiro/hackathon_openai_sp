@@ -15,7 +15,7 @@ export function projectSession(
 ): SessionState {
   const first = events[0];
   const latest = events.at(-1);
-  const objectiveEvent = events.find((event) => event.event_type === "task.started");
+  const objectiveEvent = events.find((event) => event.event_type === "task.started") ?? events.find((event) => event.event_type === "plan.proposed");
   const plannedActions: ReportAction[] = [];
   const executedActions: ReportAction[] = [];
   const affectedComponents = new Set<string>();
@@ -39,7 +39,7 @@ export function projectSession(
       executedActions.push({
         id: actionId,
         description,
-        status: succeeded ? "executed" : "failed",
+        status: event.payload.status === "declared" ? "declared" : succeeded ? "executed" : "failed",
         evidence_refs: evidenceFor(event),
       });
     }

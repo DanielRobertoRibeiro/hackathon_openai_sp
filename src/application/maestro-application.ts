@@ -97,7 +97,18 @@ export class MaestroApplication {
 
   async analyze(projectId: string, sessionId: string): Promise<MaestroReport> {
     const state = await this.getState(projectId, sessionId);
-    const report = await this.agent.analyze(state);
+    let knowledgeContext: Array<{ path: string; excerpt: string; version: string }> = [];
+    let knowledgeUnavailable = false;
+    try {
+      const references = state.events.filter((event) => event.source === "workflow-gateway" && event.event_type === "plan.proposed")
+        .flatMap((event) => Array.isArray(event.payload.context_refs) ? event.payload.context_refs : []).filter((ref): ref is string => typeof ref === "string");
+      for (const ref of [...new Set(references)].slice(0, 5)) {
+        const note = await this.knowledge.get(ref);
+        if (note) knowledgeContext.push({ path: note.path, excerpt: note.excerpt.slice(0, 4000), version: note.version });
+      }
+    } catch { knowledgeUnavailable = true; knowledgeContext = []; }
+    const report = await this.agent.analyze({ ...state, knowledge_context: knowledgeContext });
+    if (knowledgeUnavailable) report.unknowns.push("Consulta ao Obsidian indisponível; não há conclusão sobre políticas ou conhecimento atual.");
     await this.store.saveReport(report);
     await this.persistHandoff(report);
     this.notify(projectId, sessionId);

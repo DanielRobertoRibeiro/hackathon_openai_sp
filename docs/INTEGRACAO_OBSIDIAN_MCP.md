@@ -1,4 +1,23 @@
-# Integração futura com Obsidian e MCP
+# Integração com Obsidian e MCP
+
+## Estado implementado
+
+O transporte real é `HttpMcpToolClient` e a tradução de `KnowledgePort` para
+`vault_*`/`search_*` é feita por `ObsidianMcpAdapter`. A factory usa esse adaptador
+quando `KNOWLEDGE_ADAPTER=mcp` e as duas variáveis de conexão estão presentes.
+O `McpKnowledgeAdapter` com nomes `knowledge_*` permanece como porta genérica
+para servidores que implementem esse contrato; não é o plugin da VM.
+
+O vault ativo é `/srv/maestro/vault`. O serviço Obsidian exige autenticação em
+loopback; o gateway Maestro não distribui essa credencial administrativa aos
+desenvolvedores. Eles recebem credenciais individuais para o MCP `maestro`, com
+leitura de conhecimento e ferramentas de workflow, não escrita arbitrária em políticas.
+
+Planos são persistidos em `01 Projeto Maestro/19 Planos de Acao`; atividades
+observadas em `01 Projeto Maestro/20 Workflow`; handoffs em `18 Handoffs`.
+Consulte [instalação, garantias e limites](CODEX_WORKFLOW.md). A sincronização
+durável por outbox descrita na proposta abaixo ainda não está implementada;
+falhas ficam registradas e exigem retry explícito da operação.
 
 ## Objetivo
 

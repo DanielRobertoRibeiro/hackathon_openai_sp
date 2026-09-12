@@ -97,7 +97,17 @@ OBSIDIAN_VAULT_PATH=/caminho/do/vault
 OBSIDIAN_ALLOWED_PREFIXES=01 Projeto Maestro
 ```
 
-Para MCP, implemente `McpToolClient` em `src/knowledge/mcp-adapter.ts` e injete o transporte escolhido. O domínio e o agente não precisam ser alterados.
+Para o MCP comunitário já instalado na VM, configure `KNOWLEDGE_ADAPTER=mcp`,
+`OBSIDIAN_MCP_SERVER` e `OBSIDIAN_MCP_TOKEN` fora do Git. O adaptador real usa
+`vault_*`/`search_*`, confirma a gravação por releitura e fornece recibo com hash.
+
+## Desenvolvedores no Codex Desktop
+
+Consulte [instalação e limites do workflow](docs/CODEX_WORKFLOW.md).
+O gateway autenticado expõe `/api/mcp`; cada integrante recebe credencial própria.
+O plano é enviado antes da execução e aguarda revisão humana. O bloqueio no Codex
+depende também dos hooks locais instalados, revisados e confiados — somente
+adicionar uma URL MCP **não** intercepta todas as ferramentas.
 
 ## Verificação
 

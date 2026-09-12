@@ -23,8 +23,8 @@ Sua responsabilidade é organizar conhecimento autorizado, preservar rastreabili
 - Objetivo: acompanhar e coordenar fluxos de desenvolvimento durante o hackathon da OpenAI.
 - Ambiente: Codex e máquina virtual Oracle com Obsidian.
 - Repositório: `https://github.com/DanielRobertoRibeiro/hackathon_openai_sp`.
-- Integração: será conectada posteriormente via MCP, filesystem autorizado ou outro adaptador.
-- Estado inicial: nenhuma nota operacional foi processada.
+- Integração atual: KnowledgePort com adaptador MCP para o Obsidian na VM; gateway Maestro para os desenvolvedores. Ver `docs/CODEX_WORKFLOW.md`.
+- Estado operacional: consultar eventos e recibos atuais; não presumir ausência de notas nem conclusão apenas porque a integração existe.
 
 ## Princípios
 
