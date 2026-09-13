@@ -1,4 +1,4 @@
-[▶️ **Assistir ao vídeo de apresentação do Agente HackTown OpenAI**](./assets/agente-hacktown-openai.mp4?raw=1)
+https://github.com/user-attachments/assets/4908b2a0-0f89-4ddf-80df-ca16f0bb7b95
 
 # Maestro
 
